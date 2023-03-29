@@ -634,9 +634,10 @@ header .navbar a:hover {
 }
 
 #scroll-top {
+	/* display:; */
 	position: fixed;
 	top: -120%;
-	right: 2rem;
+	right: 0rem;
 	padding: 0.5rem 1.5rem;
 	font-size: 4rem;
 	background: var(--orange);
@@ -681,11 +682,19 @@ header .navbar a:hover {
 	section {
 		padding: 2rem;
 	}
+
+	/* #scroll-top{
+		display: none;
+	} */
+	.links{
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 @media (max-width: 768px) {
 	#menu-bar {
-		display: initial;
+		display:inline;
 	}
 
 	header .navbar {
@@ -726,6 +735,16 @@ header .navbar a:hover {
 	.home .content li {
 		font-size: 20px;
 	}
+	/* #scroll-top{
+		display: none;
+	} */
+
+	.links{
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* .links */
 }
 
 .modal {
