@@ -9,26 +9,42 @@
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
+		<!--  bootstrap 5 -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
 		<!-- custom css file link  -->
 		<link rel="stylesheet" href="style.css" />
+		
 	</head>
 	<body>
 		<!-- header section starts  -->
 
-		<header id="nav">
-			<a href="#"><img src="./images/logo.png" class="logo" alt="" /></a>
+		<header class="parent-header">
+			<!-- <div class="master-nav">
+				<ul>
+					<i class="fa-brands fa-facebook" style="color: #0f19a3;"></i>
+					<li>t</li>
+					<li>y</li>
+				</ul>
+				<ul>
+					<li>number</li>
+					<li>number</li>
+				</ul>
+			</div> -->
+			<div class="header" id="nav">
+				<a href="#"><img src="./images/logo.png" class="logo" alt="" /></a>
 
-			<div id="menu-bar" class="fas fa-bars"></div>
+				<div id="menu-bar" class="fas fa-bars"></div>
 
-			<nav class="navbar">
-				<a href="#home">home</a>
-				<a href="#speciality">speciality</a>
-				<a href="#popular">Shop</a>
-				<a href="#gallery">Recepies</a>
-				<a href="#review">About Us</a>
-				<a href="#contact">Contact Us</a>
-			</nav>
+				<nav class="navbar">
+					<!-- <a href="#home">home</a>
+					<a href="#speciality">speciality</a>
+					<a href="#popular">Shop</a>
+					<a href="#gallery">Recepies</a>
+					<a href="#review">About Us</a>
+					<a href="#contact">Contact Us</a> -->
+				</nav>
+			</div>
+
 		</header>
 
 		<!-- header section ends -->
@@ -36,24 +52,27 @@
 		<!-- home section starts  -->
 
 		<section class="home hero-section" id="home">
+			<div class="image">
+				<img src="images/Savory-3.png" alt="" />
+
+			</div>
 			<div class="content">
 				<h3>Savor a quick and <span class="light-span">Healthy</span> fix</h3>
-				<p>
+				<!-- <p>
 					End people's cravings for that less-found combination of taste and
 					health. We went all in with our creativity and experimented with the
 					healthiest and tastiest ingredients to offer you spreads that you'd
 					savour for life. We endeavour to be India's favourite food company
-				</p>
+				</p> -->
 				<a href="#order" class="btn">order now</a>
 			</div>
 
-			<div class="image">
-				<img src="images/39.png" alt="" />
-			</div>
+
 		</section>
 
 		<!-- home section ends -->
 
+		
 		<!-- speciality section starts  -->
 
 		<section class="speciality" id="speciality">
@@ -126,10 +145,67 @@ SAVORY Chocolate Hazelnut spread consumed mainly for breakfast, snacks and desse
 			</div>
 		<section class="sectional-padding"></section>
 
+
+
 		</section>
 
 		<!-- speciality section ends -->
+
+		
 		<section class="sectional-padding"></section>
+
+		<!-- new -->
+		<section class="carousal">
+			<div class="container text-center my-3">
+				<div class="row mx-auto my-auto justify-content-center">
+					<div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner speciality" role="listbox">
+							<div class="carousel-item box-container active speciality">
+								<div class="col-md-4 box">
+										<a href="https://www.flipkart.com/savory-natural-unsweetened-peanut-butter-no-salt-no-sugar-high-protein-ready-eat-400-g/p/itm60f212d275157?pid=JASGGKK3Z6ASSEWU&lid=LSTJASGGKK3Z6ASSEWUIAYPH5&marketplace=FLIPKART&q=savory+peanut+butter&store=eat%2Fxhv&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=en_6INiJYX54OwIPMD7FqRE89tAnYslB1diyC5fw5kUak8zbhwe6heCM10CE8GzeSge8zCVZ%2FnS35d7YfwQfcx%2F9Q%3D%3D&ppt=sp&ppn=sp&ssid=sgt2obpyfk0000001680068147433&qH=3e7015c1fb8d65d5" target="_blank" rel="noopener noreferrer">
+										<img class="image" src="images/44.png" alt="" />
+										</a>
+										<div class="content">
+											<img src="images/44.png" alt="" />
+											<h3 class="prod-1">Natural Peanut Butter</h3>
+											<p>
+												Peanut butter is a nutrient-rich food, containing protein, several vitamins, and dietary minerals in high content. It is typically served as a spread on bread, toast, or crackers, and used to make sandwiches. It is also used in a number of breakfast dishes and desserts.
+											</p>
+										</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="card">
+										<div class="card-img">
+											<img src="https://via.placeholder.com/700x500.png/DDBEA9/333333?text=2" class="img-fluid">
+										</div>
+										<div class="card-img-overlay">Slide 2</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="card">
+										<div class="card-img">
+											<img src="https://via.placeholder.com/700x500.png/FFE8D6/333333?text=3" class="img-fluid">
+										</div>
+										<div class="card-img-overlay">Slide 3</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						</a>
+						<a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						</a>
+					</div>
+				</div>		
+			</div>
+		</section>
+		<!-- new end -->
 
 		<!-- new -->
 		<marquee class="blink"
@@ -154,7 +230,7 @@ SAVORY Chocolate Hazelnut spread consumed mainly for breakfast, snacks and desse
 						with crunchy goodness - the perfect kitchen essential
 					</p>
 					<a
-						href="https://www.flipkart.com/savory-creamy-biscuit-spread-used-cakes-muffins-brownies-shakes-400-g/p/itme548abe2d1639?pid=JASGGKKYFRYQJSRF&lid=LSTJASGGKKYFRYQJSRFYPPKSW&marketplace=FLIPKART&store=eat%2Ft3s%2F97x&srno=b_1_1&otracker=browse&fm=organic&iid=en_S3n7dljGUI7kg%2FPgPXdlxIU65B81fbTtwECEPk8HVBIoDN6VFcvc%2BrSBtuVaXIf93J9z06YdjoeYj7sfIqsCBw%3D%3D&ppt=browse&ppn=browse&ssid=ojzaovj85c0000001680067860830"
+						href="https://www.amazon.in/dp/B0B641NP3W?ref=emc_p_m_5_i&th=1"
 						class="btn"
 						>order now</a
 					>
@@ -169,7 +245,7 @@ SAVORY Chocolate Hazelnut spread consumed mainly for breakfast, snacks and desse
 					</p>
 
 					<a
-						href="https://www.flipkart.com/savory-crunchy-biscuit-spread-used-cakes-muffins-brownies-shakes-400-g/p/itmb0410dffb254e?pid=JASGGKH4H9HY8G7H&lid=LSTJASGGKH4H9HY8G7H0AZJ22&marketplace=FLIPKART&q=savory+biscuit+spread&store=eat&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=a553bfc0-1cec-49b4-afc5-a5352341964f.JASGGKH4H9HY8G7H.SEARCH&ppt=sp&ppn=sp&ssid=oodwyvrkm80000001680068426802&qH=a82be3d7a4308a4e"
+						href="https://www.amazon.in/dp/B0B63VVF3D?ref=emc_p_m_5_i&th=1"
 						class="btn"
 						>order now</a
 					>
@@ -184,7 +260,7 @@ SAVORY Chocolate Hazelnut spread consumed mainly for breakfast, snacks and desse
 					</p>
 
 					<a
-						href="https://www.flipkart.com/savory-chocolate-peanut-butter-high-protein-ready-eat-400-g/p/itmb693a219ea27e?pid=JASGGKH9HXPNUN6Z&lid=LSTJASGGKH9HXPNUN6ZVBBL0K&marketplace=FLIPKART&q=savory+chocolate+peanut+butter&store=eat%2Fxhv&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=659c00c5-fd49-458a-b773-4ccbb6da5e68.JASGGKH9HXPNUN6Z.SEARCH&ppt=sp&ppn=sp&ssid=q51wt95rr40000001680068719980&qH=901b1621ccb15de7"
+						href="https://www.amazon.in/dp/B0B63SW9KK?ref=emc_p_m_5_i&th=1"
 						class="btn"
 						>order now</a
 					>
@@ -199,7 +275,7 @@ SAVORY Chocolate Hazelnut spread consumed mainly for breakfast, snacks and desse
 					</p>
 
 					<a
-						href="https://www.flipkart.com/savory-creamy-peanut-butter-high-protein-ready-eat-400-g/p/itmc8ad79d6064cf?pid=JASGGKH2DB9QGQG8&lid=LSTJASGGKH2DB9QGQG8YVQABX&marketplace=FLIPKART&q=savory+peanut+butter&store=eat%2Fxhv&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=49687a0f-f911-4ec4-868b-49ab1963af2d.JASGGKH2DB9QGQG8.SEARCH&ppt=sp&ppn=sp&ssid=sgt2obpyfk0000001680068147433&qH=3e7015c1fb8d65d5"
+						href="https://www.amazon.in/dp/B0B63S5K4R/ref=emc_bcc_2_i?th=1"
 						class="btn"
 						>order now</a
 					>
@@ -215,7 +291,7 @@ SAVORY Chocolate Hazelnut spread consumed mainly for breakfast, snacks and desse
 					</p>
 
 					<a
-						href="https://www.flipkart.com/savory-chocolate-hazelnut-spread-made-finest-cocoa-ready-eat-400-g/p/itmbce93e3416ea4?pid=JASGGKKSHHAVPXU5&lid=LSTJASGGKKSHHAVPXU5BCWCUV&marketplace=FLIPKART&q=savory+hazelnut+spread&store=eat%2Fxhv&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=969b36ad-a436-47aa-af16-9e9cdbcb653c.JASGGKKSHHAVPXU5.SEARCH&ppt=sp&ppn=sp&ssid=vf9mmelyz40000001680068404844&qH=adb8154c55df99e7"
+						href="https://www.amazon.in/Savory-Chocolate-Hazelnut-Spread-Nutrients/dp/B0B6418C39"
 						class="btn"
 						>order now</a
 					>
@@ -230,7 +306,7 @@ SAVORY Chocolate Hazelnut spread consumed mainly for breakfast, snacks and desse
 					</p>
 
 					<a
-						href="https://www.flipkart.com/savory-natural-unsweetened-peanut-butter-no-salt-no-sugar-high-protein-ready-eat-400-g/p/itm60f212d275157?pid=JASGGKK3Z6ASSEWU&lid=LSTJASGGKK3Z6ASSEWUIAYPH5&marketplace=FLIPKART&q=savory+peanut+butter&store=eat%2Fxhv&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=en_6INiJYX54OwIPMD7FqRE89tAnYslB1diyC5fw5kUak8zbhwe6heCM10CE8GzeSge8zCVZ%2FnS35d7YfwQfcx%2F9Q%3D%3D&ppt=sp&ppn=sp&ssid=sgt2obpyfk0000001680068147433&qH=3e7015c1fb8d65d5"
+						href="https://www.amazon.in/dp/B0B641B9V2?ref=emc_p_m_5_i"
 						class="btn"
 						>order now</a
 					>
@@ -241,33 +317,6 @@ SAVORY Chocolate Hazelnut spread consumed mainly for breakfast, snacks and desse
 		</section>
 
 		<!-- popular section ends -->
-
-		<!-- steps section starts  -->
-
-		<!-- <div class="step-container">
-			<h1 class="heading">how it <span>works</span></h1>
-
-			<section class="steps">
-				<div class="box">
-					<img src="images/step-1.jpg" alt="" />
-					<h3>choose your favorite food</h3>
-				</div>
-				<div class="box">
-					<img src="images/step-2.jpg" alt="" />
-					<h3>free and fast delivery</h3>
-				</div>
-				<div class="box">
-					<img src="images/step-3.jpg" alt="" />
-					<h3>easy payments methods</h3>
-				</div>
-				<div class="box">
-					<img src="images/step-4.jpg" alt="" />
-					<h3>and finally, enjoy your food</h3>
-				</div>
-			</section>
-		</div> -->
-
-		<!-- steps section ends -->
 		<section class="sectional-padding"></section>
 
 		<!-- gallery section starts  -->
@@ -279,64 +328,76 @@ SAVORY Chocolate Hazelnut spread consumed mainly for breakfast, snacks and desse
 				<div class="box">
 					<img src="./images/13.png" alt="" />
 					<div class="content">
-						<h3>Peanut Butter Bliss Balls</h3>
+						<img src="images/peanut.jpg"/>
+						<!-- <h3>Peanut Butter Bliss Balls</h3> -->
 						<a href="recepies1.html" class="btn">Check recepie</a>
 					</div>
 				</div>
 				<div class="box">
 					<img src="images/15.png" alt="" />
 					<div class="content">
-						<h3>Peanut Butter Oats Bowl</h3>
+						<img src="images/peanut.jpg"/>
+
+						<!-- <h3>Peanut Butter Oats Bowl</h3> -->
 						<a href="recepies2.html" class="btn">Check recepie</a>
 					</div>
 				</div>
 				<div class="box">
 					<img src="images/18.png" alt="" />
 					<div class="content">
-						<h3>Peanut Butter Apple Sandwich</h3>
+						<img src="images/peanut.jpg"/>
+						
+						<!-- <h3>Peanut Butter Apple Sandwich</h3> -->
 						<a href="recepies3.html" class="btn">Check recepie</a>
 					</div>
 				</div>
 				<div class="box">
 					<img src="images/16.png" alt="" />
 					<div class="content">
-						<h3>Peanut Butter Milk Shake</h3>
+						<img src="images/peanut.jpg"/>
+
+						<!-- <h3>Peanut Butter Milk Shake</h3> -->
 						<a href="recepies4.html" class="btn">Check recepie</a>
 					</div>
 				</div>
 				<div class="box">
 					<img src="images/17.png" alt="" />
 					<div class="content">
-						<h3>Peanut Butter Fudge Cups</h3>
+						<img src="images/peanut.jpg"/>
+						<!-- <h3>Peanut Butter Fudge Cups</h3> -->
 						<a href="recepies5.html" class="btn">Check recepie</a>
 					</div>
 				</div>
 				<div class="box">
 					<img src="images/14.png" alt="" />
 					<div class="content">
-						<h3>Peanut Butter ‘N’ Jelly Cake</h3>
+						<img src="images/peanut.jpg"/>
+						<!-- <h3>Peanut Butter ‘N’ Jelly Cake</h3> -->
 						<a href="/recepies6.html" class="btn">Check recepie</a>
 					</div>
 				</div>
 				<div class="box">
 					<img src="images/19.png" alt="" />
 					<div class="content">
-						<h3>Hazelnut Spread Stuffed Strawberries</h3>
+						<img src="images/hazelnut.png"/>
+						<!-- <h3>Hazelnut Spread Stuffed Strawberries</h3> -->
 						<a href="recepies9.html" class="btn">Check recepie</a>
 					</div>
 				</div>
 				<div class="box">
 					<img src="images/20.png" alt="" />
 					<div class="content">
-						<h3>Lazy Cake</h3>
+						<img src="images/chocolate.jpg"/>
+						<!-- <h3>Lazy Cake</h3> -->
 						<a href="recepies7.html" class="btn">Check recepie</a>
 					</div>
 				</div>
 				<div class="box">
 					<img src="images/21.png" alt="" />
 					<div class="content">
+						<img src="images/hazelnut.png"/>
 						<h3>Hazelnut Pie</h3>
-						<a href="/recepies8.html" class="btn">Check recepie</a>
+						<a href="recepies8.html" class="btn">Check recepie</a>
 					</div>
 				</div>
 			</div>
@@ -344,6 +405,49 @@ SAVORY Chocolate Hazelnut spread consumed mainly for breakfast, snacks and desse
 
 		<!-- gallery section ends -->
 		<section class="sectional-padding"></section>
+
+		<!-- new -->
+		
+		<section class="home about-us" id="home">
+						<div class="ab-image">
+				<!-- <img src="images/39.png" alt="" /> -->
+				<img src="images/Savory (1).gif" alt="" />
+
+			</div>
+			<div class="ab-content">
+				<h3>Know why savory is <span class="light-span">naturally</span> healthy for</h3>
+				<p>
+					End people's cravings for that less-found combination of taste and no added preservatives
+					It has tin seal, for retaining the freshness. It uses Sugar free variant which is also pet friendly.
+				</p>
+				<a href="#order" class="btn">order now</a>
+			</div>
+		</section>
+
+		<!-- end new -->
+
+		<!-- steps section starts  -->
+
+		<div class="step-container">
+			<h1 class="heading">how it <span>works</span></h1>
+
+			<section class="steps">
+				<div class="box">
+					<img src="images/35.png" alt="" />
+					<h3>Open</h3>
+				</div>
+				<div class="box">
+					<img src="images/34.png" alt="" />
+					<h3>Speard</h3>
+				</div>
+				<div class="box">
+					<img src="images/36.png" alt="" />
+					<h3>Enjoy</h3>
+				</div>
+			</section>
+		</div>
+
+		<!-- steps section ends -->
 
 		<!-- review section starts  -->
 
@@ -399,15 +503,51 @@ SAVORY Chocolate Hazelnut spread consumed mainly for breakfast, snacks and desse
 				</div>
 			</div>
 		<section class="sectional-padding"></section>
-
 		</section>
 
 		<!-- review section ends -->
 		<section class="sectional-padding"></section>
 
+		<!-- features -->
+				<section class="feature" id="feature">
+			<h1 class="heading">our <span class="light-span"></span>features</span></h1>
+			<div class="box-container">
+				<div class="box">
+					<a href="https://times-bulletin.com/savour-this-christmas-with-savory-spreads/" target="_blank" rel="noopener noreferrer">
+					<img src="images/toi.png" alt="" />
+
+					</a>
+				</div>
+				<div class="box">
+					<a href="https://www.ahmedabadmirror.com/spread-pioneer-savory-from-healthymills-international-pvt-ltd-raised-rs-90-lakhs-for-savory-brand-in-latest-funding-round/81853817.html">
+					<img src="images/am-logo.png" alt="" />
+
+					</a>
+
+				</div>
+				<div class="box">
+					<a href="https://thetimes24.in/index.php/2023/04/01/spread-pioneer-savory-from-healthymills-international-pvt-ltd-raised-rs-90-lakhs-for-savory-brand-in-latest-funding-round/" target="_blank" rel="noopener noreferrer">
+					<img src="images/ht.png" alt="" />
+
+					</a>
+
+					</div>
+					<div class="box">
+						<a href="https://thetimes24.in/index.php/2023/04/01/spread-pioneer-savory-from-healthymills-international-pvt-ltd-raised-rs-90-lakhs-for-savory-brand-in-latest-funding-round/" target="_blank" rel="noopener noreferrer">
+						<img src="images/sandesh.jpg" alt="" />
+	
+						</a>
+	
+						</div>
+			</div>
+			
+		<section class="sectional-padding"></section>
+		</section>
+		<!-- eatures end -->
+
 		<!-- order section starts  -->
 
-		<section class="order" id="contact">
+		<!-- <section class="order" id="contact">
 			<h1 class="heading"><span>Contact</span> us</h1>
 
 			<div class="row">
@@ -447,7 +587,7 @@ SAVORY Chocolate Hazelnut spread consumed mainly for breakfast, snacks and desse
 					<div id="overlay"></div>
 				</form>
 			</div>
-		</section>
+		</section> -->
 
 		<!-- order section ends -->
 		<section class="sectional-padding"></section>
@@ -467,9 +607,9 @@ SAVORY Chocolate Hazelnut spread consumed mainly for breakfast, snacks and desse
 
 				<div class="share">
 					<a href="#" class="">facebook</a>
-					<a href="#" class="">twitter</a>
+					<!-- <a href="#" class="">twitter</a> -->
 					<a href="#" class="">instagram</a>
-					<a href="#" class="">pinterest</a>
+					<!-- <a href="#" class="">pinterest</a> -->
 				</div>
 
 				<div class="share">
@@ -485,7 +625,7 @@ SAVORY Chocolate Hazelnut spread consumed mainly for breakfast, snacks and desse
 		</section>
 
 		<!-- scroll top button  -->
-		<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+		<a href="#home" style="background: greenyellow;"  id="scroll-top"><i class="fa fa-whatsapp"></i></a>
 
 		<!-- loader  -->
 		<div class="loader-container">
@@ -494,5 +634,9 @@ SAVORY Chocolate Hazelnut spread consumed mainly for breakfast, snacks and desse
 
 		<!-- custom js file link  -->
 		<script src="script.js"></script>
+		<!-- font awesome -->
+		<script src="https://kit.fontawesome.com/fb5a2aaa44.js" crossorigin="anonymous"></script>
+		<!-- bootstrap -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	</body>
 </html>
